@@ -1,0 +1,34 @@
+package com.kh.test.main;
+
+import java.util.Scanner;
+
+public class Test4 {
+	public static void main(String[] args) {
+		/*
+		 1부터 9까지 값을 스캐로 각각 입력받아
+		 
+		 더하기 빼기 곱하기 몫 출력하기
+		 
+		 int 숫자1
+		 int 숫자2
+		*/
+		System.out.println("1 ~ 9까지의 숫자를 입력하세요.");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("숫자 입력1 : ");
+		int 숫자1 = sc.nextInt();
+		System.out.print("숫자 입력2 : ");
+		int 숫자2 = sc.nextInt();
+		
+		if(숫자1>=1 && 숫자1<=9 && 숫자2>=1 && 숫자2<=9) {
+			System.out.println(숫자1+" + "+숫자2+ " = " +(숫자1+숫자2));
+			System.out.println(숫자1+" - "+숫자2+ " = " +(숫자1-숫자2));
+			System.out.println(숫자1+" * "+숫자2+ " = " +(숫자1*숫자2));
+			System.out.println(숫자1+" / "+숫자2+ " = " +(숫자1/숫자2));
+		}else {
+			System.out.println("1~9까지의 값을 입력해주세요.");
+		}
+		
+		
+
+	}
+}

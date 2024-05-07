@@ -1,0 +1,12 @@
+package com.kh.ExceptionEx;
+
+public class ExceptionPre {
+	public static void main(String[] args) {
+		
+		// 0으로 나누기할 때 if 작성하며 예외처리 발생 방지
+		
+		int 나누기결과 = 10/0;
+		
+		System.out.println(나누기결과);
+	}
+}

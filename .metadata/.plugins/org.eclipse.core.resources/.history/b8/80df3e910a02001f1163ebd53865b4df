@@ -1,0 +1,19 @@
+package com.kh.practice.list.music.controller;
+
+import java.util.*;
+
+import com.kh.practice.list.music.model.vo.Music;
+
+public class MusicController {
+	//음악 목록
+	List<Music> list = new ArrayList<>();
+	
+	//음악 추가
+	public int addList(String title, String singer) {
+		//		Music 객체에 넣어줘야함
+		//							DB 추가에     성공하면 1 실패하면 0
+		//					만약에 추가 성공이          ? true : false
+		return list.add(new Music (title, singer)) ?  1   :   0  ;
+	}
+
+}

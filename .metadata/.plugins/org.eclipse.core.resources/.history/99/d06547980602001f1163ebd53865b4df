@@ -1,0 +1,16 @@
+package com.kh.practice.list.music.controller;
+
+import java.util.*;
+
+import com.kh.practice.list.music.model.vo.Music;
+
+public class MusicController {
+	//음악 목록
+	List<Music> list = new ArrayList<>();
+	
+	//음악 추가
+	public void addList(String title, String singer) {
+		
+	}
+
+}

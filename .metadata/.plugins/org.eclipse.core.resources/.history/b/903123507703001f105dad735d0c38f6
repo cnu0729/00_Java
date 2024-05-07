@@ -1,0 +1,21 @@
+package com.kh.variable.pre;
+
+public class EnumPre {
+// enum 무지개 {빨~보};
+	public enum 무지개{
+		빨강색,
+		주황색,
+		노랑색,
+		초록색,
+		파랑색,
+		남색,
+		보라색
+	}
+	
+	//main
+	public static void main(String[] args) {
+		//빨~보 출력
+		System.out.println("");
+		
+	}
+}

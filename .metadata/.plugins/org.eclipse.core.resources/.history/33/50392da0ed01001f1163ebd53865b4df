@@ -1,0 +1,29 @@
+package com.kh.IteratorEx;
+
+import java.util.*;
+
+/*
+ ListIterator
+ 
+ hasNext()		: 다음 값이 존재하는지 true false 로 확인
+ next()			: 다음 값 가져오기
+ hasPrevious()  : 이전 값이 존재하는지 true false 로 확인
+ previous()		: 이전 값 가져오기
+*/
+
+public class ListIteratorEx {
+	public static void main(String[] args) {
+		ArrayList<String> 색상들 = new ArrayList<>();
+		색상들.add("빨강");
+		색상들.add("화이트");
+		색상들.add("초록");
+		
+		// 리스트이터레이터 생성
+		ListIterator<String> 반복하기 = 색상들.listIterator();
+		
+		while(반복하기.hasNext()) {
+			String 색상 = 반복하기.next();
+			System.out.println(색상);
+		}
+	}
+}

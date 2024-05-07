@@ -1,0 +1,40 @@
+package com.kh.imageEx;
+
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class ImageResizePre {
+	//원본이미지 pigs.jpg pigs_cute.jpg 가로=400 세로=200
+	public static void main(String[] args) {
+		//원본이미지 경로
+		
+		String 원본이미지 = "src/com/kh/"
+				+ "imageEx/pigs.jpg";
+		String 사이즈조정이미지 = "src/com/kh/imageEx/pigs_cute.jpg";
+		
+		//이미지 가로 세로 크기 설정
+		int 가로 = 400;
+		int 세로 = 200;
+		
+		try {
+			
+			BufferedImage 원본이미지데이터 = ImageIO.read(new File(원본이미지));
+			
+			BufferedImage 크기조정이미지 = new BufferedImage(가로, 세로, BufferedImage.TYPE_INT_RGB);
+			
+			Image 이미지그리기 = 원본이미지데이터.getScaledInstance(가로, 세로, Image.SCALE_SMOOTH);
+			
+			크기조정이미지.createGraphics().drawImage(이미지그리기,0, 0, null);
+			
+			ImageIO.write(크기조정이미지, "jpg", new File(사이즈조정이미지));
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

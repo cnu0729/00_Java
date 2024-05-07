@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.kh.practice.charCheck.view.ChracterMenu&apos; to &apos;CharacterMenu&apos;&#x0D;&#x0A;- Original project: &apos;99_10_1_예외실습문제&apos;&#x0D;&#x0A;- Original element: &apos;com.kh.practice.charCheck.view.ChracterMenu&apos;&#x0D;&#x0A;- Renamed element: &apos;com.kh.practice.charCheck.view.CharacterMenu&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ChracterMenu&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.kh.practice.charCheck.view{ChracterMenu.java[ChracterMenu" matchStrategy="1" name="CharacterMenu" qualified="false" references="true" similarDeclarations="false" stamp="1714118847112" textual="false" version="1.0"/>
+</session>

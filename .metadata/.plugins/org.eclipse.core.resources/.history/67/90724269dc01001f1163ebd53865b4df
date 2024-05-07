@@ -1,0 +1,23 @@
+package com.kh.MapEx;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapPre {
+	//기본생성자 ctrl space enter
+	public MapPre() {
+	}
+	
+	public void practice1() {
+		Map<Integer, String> map = new HashMap<>();
+		map.put(2, "에그마요");
+		map.put(3, "로티세리바베큐");
+		map.put(1, "스파이시쉬림프");
+		System.out.println(map);
+	}
+	
+	//최종 메인메서드
+	public static void main(String[] args) {
+		MapPre mp = new MapPre();
+	}
+}

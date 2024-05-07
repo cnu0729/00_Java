@@ -1,0 +1,25 @@
+package com.kh.SetEx;
+import java.util.*;
+public class TreeSetPre {
+	//main
+	public static void main(String[] args) {
+		//String "키위 복숭아 참외 수박 딸기"
+		TreeSetPre<String> 과일들 = new TreeSetPre<>();
+		//복숭아 제거
+		
+		//수박이 포함되어있는지 확인
+		
+		//과일들이 비어있는지 확인
+		
+		//과일들 개수
+		
+		//가장 작은 값
+		
+		//가장 큰 값
+		
+		//모든 값 제거
+		
+		//모든 값 제거 되었는지 확인
+	}
+	
+}
